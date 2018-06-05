@@ -1,0 +1,47 @@
+{
+  "name": "concurrency-promise",
+  "version": "1.0.0",
+  "description": "Split promises in chunks and execute by Promise.all",
+  "main": "index.js",
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "8",
+            "browsers": [
+              ">0.25%",
+              "not ie 11",
+              "not op_mini all"
+            ]
+          }
+        }
+      ]
+    ]
+  },
+  "standard": {
+    "globals": [
+      "beforeAll",
+      "afterAll",
+      "it",
+      "describe",
+      "expect"
+    ]
+  },
+  "scripts": {
+    "build": "babel src -s -D -d dist",
+    "example": "babel-node src/index.example.js",
+    "lint": "standard 'src/**/*.js'",
+    "test": "npm run lint && jest"
+  },
+  "keywords": ["promise", "concurrency"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.1.0",
+    "standard": "^11.0.1"
+  }
+}
