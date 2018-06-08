@@ -1,8 +1,8 @@
 {
   "name": "concurrency-promise",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Split promises in chunks and execute by Promise.all",
-  "main": "index.js",
+  "main": "dist/index.js",
   "babel": {
     "presets": [
       [
